@@ -5,7 +5,8 @@ import { loginUrl } from "./settings";
 import LogIn from "./components/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./css/index.css";
+import "./css/style.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import WelcomePage from "./components/WelcomePage";
 
 function App() {
@@ -48,8 +49,6 @@ function App() {
       {loggedIn && (
         <nav className="borderNoTop">
           <Link to="/">Home</Link>
-          <Link to="/jokes">jokes</Link>
-          <Link to="/facts">facts</Link>
         </nav>
       )}
       <Outlet />

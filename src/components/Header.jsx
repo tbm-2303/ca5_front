@@ -5,7 +5,7 @@ const Header = () =>{
         <header className="borderTopBottom">
             <h5>Welcome to Timeline App</h5>
             <br/>
-            <h7>Created by Louise Estrup, Oliver Jenbo, Timothy Mortensen og Annika Jespsersen</h7>
+            <h6>Created by Louise Estrup, Oliver Jenbo, Timothy Mortensen og Annika Jespsersen</h6>
         </header>
     )
 }

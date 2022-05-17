@@ -1,26 +1,10 @@
 <!-- skal slettes -->
 
-html {
-  overflow-y: scroll;
-}
+
 body {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 800px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: black;
-  color: white;
+  --purple-color: #89848a;
 }
-body {
-  --purple-color: #a00dd1;
-}
-header,
-footer {
-  background-color: var(--purple-color);
-  padding: 10px 0;
-  color: black;
-}
+
 .App h2 {
   font-size: 30px;
 }
