@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
-import HelloWorld from "./components/helloworld";
-import LogOut from "./components/logout";
+import LogOut from "./components/Logout";
 import { loginUrl } from "./settings";
-import LogIn from "./components/login";
-import Header from "./components/header";
-import Footer from "./components/footer";
-import "./styles/index.css";
+import LogIn from "./components/Login";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./css/index.css";
+import WelcomePage from "./components/WelcomePage";
 
 function App() {
   const [userName, setUserName] = useState("");
@@ -40,8 +40,10 @@ function App() {
   return (
     <div className="App">
       <Header />
+      {!loggedIn && <LogIn onAdd={logInFunc} />}
+      {loggedIn && <LogOut onClick={logOutFunc} />}
 
-      {loggedIn && <HelloWorld name={userName} role={userRole} />}
+      {loggedIn && <WelcomePage name={userName} role={userRole} />}
 
       {loggedIn && (
         <nav className="borderNoTop">
@@ -52,9 +54,7 @@ function App() {
       )}
       <Outlet />
 
-      {!loggedIn && <LogIn onAdd={logInFunc} />}
 
-      {loggedIn && <LogOut onClick={logOutFunc} />}
 
       <Footer />
     </div>

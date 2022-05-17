@@ -1,0 +1,37 @@
+.buttonLog{
+    background-color: white;
+    border: 2px solid cornflowerblue;
+    transition-duration: 0.5s;
+    color: black;
+}
+.buttonLog:hover{
+    background-color: cornflowerblue;
+    color:white;
+}
+.borderTopBottom{
+    border:3px solid grey;
+    background-color: white;
+}
+.errorPage{
+    border: 3px solid red;
+    background-color: white;
+    color: black;
+}
+.navBar{
+    background-color: grey;
+    overflow: hidden;
+}
+.navBar Link{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px 15px;
+}
+.navBar Link:hover{
+    background-color: cornflowerblue;
+    color:black
+}
+.navbar Link:active{
+    background-color: cornflowerblue;
+    color:black;
+}
