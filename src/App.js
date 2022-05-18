@@ -41,8 +41,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {!loggedIn && <LogIn onAdd={logInFunc} />}
-      {loggedIn && <LogOut onClick={logOutFunc} />}
+
 
       {loggedIn && <WelcomePage name={userName} role={userRole} />}
 
@@ -51,6 +50,9 @@ function App() {
           <Link to="/">Home</Link>
         </nav>
       )}
+
+      {!loggedIn && <LogIn onAdd={logInFunc} />}
+      {loggedIn && <LogOut onClick={logOutFunc} />}
       <Outlet />
 
 

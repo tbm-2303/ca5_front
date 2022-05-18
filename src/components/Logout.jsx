@@ -1,9 +1,8 @@
 const Logout = ({onClick}) => {
     return(
         <div>
-            <input type="submit" value="Submit" onClick={onClick}>
-                Logout
-            </input>
+            <label>Logout</label>
+            <input type="submit" value="Submit" onClick={onClick}/>
         </div>
     )
 }

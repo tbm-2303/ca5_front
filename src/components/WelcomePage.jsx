@@ -5,7 +5,7 @@ const WelcomePage = ({name, role}) => {
         <div>
             <h3>Welcome {name}</h3>
             <br/>
-            <h7>Your role on this site is {role}</h7>
+            <h6>Your role on this site is {role}</h6>
         </div>
     )
 }
