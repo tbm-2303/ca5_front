@@ -47,7 +47,12 @@ function App() {
 
       {loggedIn && (
         <nav className="navBar">
-          <Link to="/">Home</Link>
+          <Link to="/">Se timelines</Link> <br/>
+          <br/>
+          <Link to="/">Se specifik timeline</Link> <br/>
+          <Link to="/">Lav ny timeline</Link> <br/>
+          <Link to="/">Lav nyt spot til en timeline</Link> <br/>
+          <Link to="/">Se alle lokationer</Link>
         </nav>
       )}
 
