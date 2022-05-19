@@ -1,13 +1,16 @@
 import { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import React from "react";
+import { Outlet, Link, Switch } from "react-router-dom";
 import LogOut from "./components/Logout";
-import { loginUrl } from "./settings";
+import CreateTimeline from "./components/CreateTimeline";
+import { loginUrl, timelineCreate } from "./settings";
 import LogIn from "./components/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./css/style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WelcomePage from "./components/WelcomePage";
+import {NavBar} from "./components/NavBar";
 
 function App() {
   const [userName, setUserName] = useState("");
@@ -46,14 +49,7 @@ function App() {
       {loggedIn && <WelcomePage name={userName} role={userRole} />}
 
       {loggedIn && (
-        <nav className="navBar">
-          <Link to="/">Se timelines</Link> <br/>
-          <br/>
-          <Link to="/">Se specifik timeline</Link> <br/>
-          <Link to="/">Lav ny timeline</Link> <br/>
-          <Link to="/">Lav nyt spot til en timeline</Link> <br/>
-          <Link to="/">Se alle lokationer</Link>
-        </nav>
+        <NavBar />
       )}
 
       {!loggedIn && <LogIn onAdd={logInFunc} />}
