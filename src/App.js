@@ -46,7 +46,7 @@ function App() {
       {loggedIn && <WelcomePage name={userName} role={userRole} />}
 
       {loggedIn && (
-        <nav className="borderNoTop">
+        <nav className="navBar">
           <Link to="/">Home</Link>
         </nav>
       )}
