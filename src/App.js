@@ -1,9 +1,8 @@
 import { useState } from "react";
 import React from "react";
-import { Outlet, Link, Switch } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import LogOut from "./components/Logout";
-import CreateTimeline from "./components/CreateTimeline";
-import { loginUrl, timelineCreate } from "./settings";
+import { loginUrl } from "./settings";
 import LogIn from "./components/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";

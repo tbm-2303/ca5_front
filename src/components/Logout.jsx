@@ -2,8 +2,7 @@ import React from "react";
 const Logout = ({onClick}) => {
     return(
         <div>
-            <label>Logout</label>
-            <input type="submit" value="Submit" onClick={onClick}/>
+            <input type="submit" value="Logout" onClick={onClick}/>
         </div>
     )
 }
