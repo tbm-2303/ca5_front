@@ -1,5 +1,4 @@
 import React from "react";
-import "src/css/style.css";
 
 const CreateTimeline = ({props}) => {
     return (

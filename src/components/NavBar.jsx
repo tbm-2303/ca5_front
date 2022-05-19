@@ -6,7 +6,7 @@ export const NavBar = () =>{
         <div>
             <nav className="navBar">
                 <li>
-                    <Link to="/">Se timelines</Link> <br/>
+                    <Link to="/timelinealluser">Se alle timelines</Link> <br/>
                 </li>
                 <li>
                     <Link to="/">Se specifik timeline</Link> <br/>

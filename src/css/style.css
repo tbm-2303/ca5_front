@@ -59,3 +59,10 @@ tableTimeline{
     border-color: rgba(37, 37, 238, 0.51);
     border-width: 5px ;
 }
+
+tableAllTimelines{
+    background-color: cornflowerblue;
+    color: black;
+    border-color: rgba(37, 37, 238, 0.51);
+    border-width: 5px;
+}
